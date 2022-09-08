@@ -15,6 +15,7 @@ public class SnakeandLadderUC1 {
 	 */
 	public static void main(String[] args) {
 		int position =0;
+		for(;position<=99;) {
 		Random rand=new Random();
 		int rolldie=rand.nextInt(6)+1;
 		System.out.println("Dice Number"+" "+rolldie);
@@ -34,8 +35,8 @@ public class SnakeandLadderUC1 {
 			if (temp<0) {
 				position=0;
 			System.out.println("Current Position is"+" "+position);
-			
-		}
+			}
+	    }
 	}
-	}
+}
 }
