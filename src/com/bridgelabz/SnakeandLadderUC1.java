@@ -22,12 +22,11 @@ public class SnakeandLadderUC1 {
 		System.out.println("Dice Number"+" "+rolldie);
 		sum=sum+rolldie;
 				int options =rand.nextInt(3);
-				int temp;
 		System.out.println("Check Options"+" "+options);
 		if (options ==1) {
 			System.out.println("ladder");
-			position=(position+rolldie);
-			System.out.println("Current Position is "+" "+position);
+			position=position+rolldie;
+			System.out.println("Current Position is"+" "+position);
 			switch(position) {
 			case 104:
 				position=position-rolldie;
@@ -60,8 +59,8 @@ public class SnakeandLadderUC1 {
 				System.out.println("Player won the game"+" "+position);
 				System.out.println("Sum of Dice"+" "+ sum);
 				break;
-
 			}
+			
 		}else if(options==0) {
 			System.out.println("No play");
 			System.out.println("Current Position is"+" "+position);
@@ -98,9 +97,9 @@ public class SnakeandLadderUC1 {
 			}
 		}else if (options==2){
 			System.out.println("Snake");
-			temp=(position-rolldie);
-			System.out.println("Current position"+" "+temp);
-			if (temp<0) {
+			position=position-rolldie;
+			System.out.println("Current position"+" "+position);
+			if (position<0) {
 				position=0;
 			System.out.println("New Position is"+" "+position);
 			}
